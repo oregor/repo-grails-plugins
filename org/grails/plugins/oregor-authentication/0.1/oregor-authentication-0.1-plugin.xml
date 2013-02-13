@@ -1,0 +1,37 @@
+<plugin name='oregor-authentication' version='0.1' grailsVersion='2.1 &gt; *'>
+  <author>Your name</author>
+  <title>Oregor Authentication Plugin</title>
+  <description>Provides a modular mechanism for the authentication of users in Oregor applications.
+It includes: user registration, login, logout, forgot password.
+</description>
+  <documentation>http://grails.org/plugin/oregor-authentication</documentation>
+  <type>OregorAuthenticationGrailsPlugin</type>
+  <resources>
+    <resource>LoginController</resource>
+    <resource>LogoutController</resource>
+    <resource>oregor.authentication.AbstractS2UiController</resource>
+    <resource>oregor.authentication.RegisterController</resource>
+    <resource>oregor.authentication.SignUpController</resource>
+    <resource>com.oregor.auth.RegistrationCode</resource>
+    <resource>com.oregor.auth.Role</resource>
+    <resource>com.oregor.auth.Tenant</resource>
+    <resource>com.oregor.auth.User</resource>
+    <resource>com.oregor.auth.UserRole</resource>
+    <resource>com.oregor.auth.UserTenant</resource>
+    <resource>grails.plugins.springsecurity.ui.SpringSecurityUiService</resource>
+    <resource>twitter.bootstrap.scaffolding.AlertsTagLib</resource>
+    <resource>twitter.bootstrap.scaffolding.FormsTagLib</resource>
+    <resource>twitter.bootstrap.scaffolding.PaginationTagLib</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='http://0.0.0.0:8081/nexus/content/repositories/myRepo/' url='http://0.0.0.0:8081/nexus/content/repositories/myRepo/' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+    <repository name='http://grails.org/plugins' url='http://grails.org/plugins' />
+  </repositories>
+  <dependencies />
+  <plugins />
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
